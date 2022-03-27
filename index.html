@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+       
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="Main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+   
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head><title>Skymate World</title>
+<body>
+    <header class="header">
+        <nav class="navbar sticky-left navbar-expand-md bg-transparent" id="sticky">
+            <a class="navbar-brand" href="#"><img src="skymate.png" id="image12"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>                                  
+            </button>
+           
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">              
+                <nav class="shift">
+                    <ul class="navbar-nav mr-auto w-100 justify-content-left" id="navBARs">
+                        <li class="nav-item" id="home">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item" id="about">
+                            <a class="nav-link" href="#">About</a>
+                        </li>    
+                        <li class="nav-item" id="contact">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>    
+                        <li class="nav-item" id="services">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>    
+                        <li class="nav-item" id="other">
+                            <a class="nav-link" href="#">Other</a>
+                        </li>
+                    </ul>
+                </nav>         
+            </div>          
+        </nav> 
+        <div class="row">
+            <div id="column11">
+                <h1 class="typewriter">Give your workout <br> A New Style! </h1>
+                    <p class="ptag">Success isn't always about greatness. It's about consistency.<br> Consistency  hard work gains success. Greatness will come.                    
+                    </p><br>
+                                          
+                    <form class="search-form">
+                    <input type="search" id="search-input" class="search-box" placeholder="Search..." autofocus required />
+                    <button class="go_btn" id="search-button" type="submit">Go</button>
+                    </form>
+            </div>               
+                <div class="column" >
+                    <div class="weather-side">
+                        <div class="weather-gradient"></div>
+                        <div class="date-block">
+                            <h2 class="date-dayname" id="day">Loading...</h2>
+                            <span class="date-day" id="date">...</span>
+                            <i id="location-icon"  data-feather="map-pin"></i>
+                            <span id="cityname">...</span>
+                        </div>
+                        <div class="weather-block">
+                            <br><br><br>
+                            <h1 id="temp">...</h1>
+                            <h3 id="description">...</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="column" >
+                    <div class="info-side">
+                        <div class="data">
+                            <div class="today-data">
+                                <br><div class="max_temp"> <span class="title">MAX TEMP</span><span id="valueMax">...</span>
+                                    <div class="clear"></div>
+                                </div><br>
+                                <div class="min_temp"> <span class="title">MIN TEMP</span><span id="valueMin">...</span>
+                                    <div class="clear"></div>
+                                </div><br>
+                                <div class="precipitation"> <span class="title">PRECIPITATION</span><span id="valueP">...</span>
+                                    <div class="clear"></div>
+                                </div><br>
+                                <div class="humidity"> <span class="title">HUMIDITY</span><span id="valueH">...</span>
+                                    <div class="clear"></div>
+                                </div><br>
+                                <div class="wind"> <span class="title">WIND</span><span id="valueW">...</span>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </div>       
+                        <br>
+                        <br>
+                        </div>
+                </div>
+            </div>
+        </div>     
+    </header>   
+<style>.footer,.generic-footer{margin-bottom:98px}@media (min-width:374px){.footer,.generic-footer{margin-bottom:78px}}@media (min-width:546px){.footer,.generic-footer{margin-bottom:56px}}@media (min-width:1055px){.footer,.generic-footer{margin-bottom:0}}.disclaimer{position:fixed;z-index:9999999;bottom:0;right:0;border-top:2px solid #ff5c62;text-align:center;font-size:14px;font-weight:400;background-color:#fff;padding:5px 10px 5px 10px}.disclaimer a:hover{text-decoration:underline}@media (min-width:1052px){.disclaimer{text-align:right;border-left:2px solid red;border-top-left-radius:10px}}@media (min-width:1920px){.disclaimer{width:60%}}</style><div class="disclaimer">We support Ukraine and condemn war. Push Russian government to act against war. Be brave, vocal and show your support to Ukraine. Follow the latest news <a title="https://www.bbc.com/news/live/world-europe-60517447" target="_blank" href="https://www.bbc.com/news/live/world-europe-60517447" style="color: black;"><b>HERE</b></a></div></body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="main.js"></script>
+
+</html>
